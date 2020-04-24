@@ -11,11 +11,14 @@
     <body>
         <header class="main-header">
             <div class="wrapper-blue">
-                <div class="center">
-                    <a class="logo" href="#"><img src="img/technomart.png" alt="ТЕХНОМАРТ" width="108" height="18"></a>
-                    <form class="header-search" action="http://echo.htmlacademy.ru" method="GET">
-                        <input type="search" value="Поиск:">
-                    </form>
+                <div class="center flex-head">
+                    <a class="logo" href="#">
+                        <img src="img/technomart.png" alt="ТЕХНОМАРТ" width="108" height="18">
+                    </a>
+                    <!-- <form class="header-search" action="http://echo.htmlacademy.ru" method="GET"> -->
+                        <input type="search" value="Поиск:" 
+                        onfocus="if (this.value=='Поиск:') this.value='Перфоратор' " onblur="this.value='Поиск:'">
+                        <!--JS-->
                     <a class="header-bookmarks" href="#"><span>Закладки: 0</span></a>
                     <a class="header-cart" href="#"><span>Корзина: 0</span></a>
                     <a class="header-issue" href="#"><span>Оформить заказ</span></a>
@@ -34,10 +37,11 @@
                             <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                         </p>
                         <ul class="login-list">
-                            <li class="login-item">
-                                <button type="button" class="user-enter">Войти</button>
+                            <li class="login-item-enter">
+                                <a class="user-enter" href="#">Войти</a>
+                                <!-- <button type="button" class="user-enter">Войти</button> -->
                             </li>
-                            <li class="login-item">
+                            <li class="login-item-registration">
                                 <a class="registration" href="#">Регистрация</a>
                             </li>
                         </ul>
@@ -100,8 +104,13 @@
                                 <img class="type-image" src="" >
                             </li>
                             <li class="type-item-slider">
-                                <ul class="slider-list">
-                                    <li class="slider-item perforator">
+                                <!-- <div class="slider"> -->
+                                    <input type="radio" class="slide-perforator" name="slider-goods" 
+                                    value="perforator" id="slide-perforator" checked>
+                                    <input type="radio" class="slide-drill" name="slider-goods"
+                                    value="drill" id="slide-drill">
+
+                                    <div class="slider-item perforator">
                                         <p class="slider-description">
                                             <span class="type-name">Перфораторы</span><br>
                                             <span class="type-about"></span>Настоящие мужские игрушки</span>
@@ -111,11 +120,11 @@
                                             <button class="right-button" type="button">right</button>
                                         </p>
                                         <a class="red-button">Открыть каталог</a>
-                                        <button class="round-button" type="button">round</button>
-                                        <button class="round-button" type="button">round</button>
+                                        <label for="slide-perforator" class="left-button">left</label>
+                                        <label for="slide-drill" class="right-button">right</label>
                                         
-                                    </li>
-                                    <li class="slider-item drill">
+                                    </div>
+                                    <div class="slider-item drill">
                                         <p class="slider-description">
                                             <span class="type-name">Дрели</span><br>
                                             <span class="type-about">Соседям на радость!</span>
@@ -125,11 +134,11 @@
                                             <button class="right-button" type="button">right</button>
                                         </p>
                                         <a class="red-button">Открыть каталог</a>
-                                        <button class="round-button" type="button">round</button>
-                                        <button class="round-button" type="button">round</button>
+                                        <label for="slide-perforator" class="left-button">left</label>
+                                        <label for="slide-drill" class="right-button">right</label>
                                         
-                                    </li>
-                                </ul>
+                                    </div>
+                                <!-- </div> -->
                             </li>
                             <li class="type-item discounts">
                                 <p class="type-description">
@@ -160,6 +169,10 @@
                                 <p class="old-price">32500 Р.</p>
                                 <p class="product-price">25500 Р.</p>
                                 <img class="product-img" src="img/Perforator_1.jpg" alt="BFG 9000">
+                                <div class="hover-green">
+                                    <a href="#" class="green-button full-button">Купить</a>
+                                    <a href="#" class="green-button green-border">В закладки</a>
+                                </div>
                             </li>
                             <li class="popular-item">
                                 <p class="product-name">Перфоратор BOSCH<br>
@@ -167,6 +180,10 @@
                                 <p class="old-price">22500 Р.</p>
                                 <p class="product-price">15500 Р.</p>
                                 <img class="product-img" src="img/Perforator_2.jpg" alt="BFG 3000">
+                                <div class="hover-green">
+                                    <a href="#" class="green-button full-button">Купить</a>
+                                    <a href="#" class="green-button green-border">В закладки</a>
+                                </div>
                             </li>
                             <li class="popular-item">
                                 <p class="product-name">Перфоратор BOSCH<br>
@@ -174,6 +191,10 @@
                                 <p class="old-price">30500 Р.</p>
                                 <p class="product-price">25500 Р.</p>
                                 <img class="product-img" src="img/Perforator_3.jpg" alt="BFG 6000">
+                                <div class="hover-green">
+                                    <a href="#" class="green-button full-button">Купить</a>
+                                    <a href="#" class="green-button green-border">В закладки</a>
+                                </div>
                             </li>
                             <li class="popular-item">
                                 <p class="product-name">Перфоратор BOSCH<br>
@@ -181,6 +202,10 @@
                                 <p class="old-price"></p>
                                 <p class="product-price">12500 Р.</p>
                                 <img class="product-img" src="img/Perforator_4.jpg" alt="BFG 2000">
+                                <div class="hover-green">
+                                    <a href="#" class="green-button full-button">Купить</a>
+                                    <a href="#" class="green-button green-border">В закладки</a>
+                                </div>
                             </li>
                         </ul>
                     </section>
