@@ -15,10 +15,21 @@
                     <a class="logo" href="#">
                         <img src="img/technomart.png" alt="ТЕХНОМАРТ" width="108" height="18">
                     </a>
-                    <!-- <form class="header-search" action="http://echo.htmlacademy.ru" method="GET"> -->
+                    <div class="search-pic">
                         <input type="search" value="Поиск:" 
                         onfocus="if (this.value=='Поиск:') this.value='Перфоратор' " onblur="this.value='Поиск:'">
-                        <!--JS-->
+                            <!--JS-->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
+                            height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+                            <g id="Layer_1">
+                            </g>
+                            <g id="Layer_2">
+                            <path  d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+                               C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+                               C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+                            </g>
+                       </svg>
+                    </div>
                     <a class="header-bookmarks" href="#"><span>Закладки: 0</span></a>
                     <a class="header-cart" href="#"><span>Корзина: 0</span></a>
                     <a class="header-issue" href="#"><span>Оформить заказ</span></a>
@@ -39,7 +50,6 @@
                         <ul class="login-list">
                             <li class="login-item-enter">
                                 <a class="user-enter" href="#">Войти</a>
-                                <!-- <button type="button" class="user-enter">Войти</button> -->
                             </li>
                             <li class="login-item-registration">
                                 <a class="registration" href="#">Регистрация</a>
@@ -120,8 +130,8 @@
                                             <button class="right-button" type="button">right</button>
                                         </p>
                                         <a class="red-button">Открыть каталог</a>
-                                        <label for="slide-perforator" class="left-button">left</label>
-                                        <label for="slide-drill" class="right-button">right</label>
+                                        <label for="slide-perforator" class="left-button-slide">left</label>
+                                        <label for="slide-drill" class="right-button-slide">right</label>
                                         
                                     </div>
                                     <div class="slider-item drill">
@@ -134,8 +144,8 @@
                                             <button class="right-button" type="button">right</button>
                                         </p>
                                         <a class="red-button">Открыть каталог</a>
-                                        <label for="slide-perforator" class="left-button">left</label>
-                                        <label for="slide-drill" class="right-button">right</label>
+                                        <label for="slide-perforator" class="left-button-slide">left</label>
+                                        <label for="slide-drill" class="right-button-slide">right</label>
                                         
                                     </div>
                                 <!-- </div> -->
@@ -196,7 +206,7 @@
                                     <a href="#" class="green-button green-border">В закладки</a>
                                 </div>
                             </li>
-                            <li class="popular-item">
+                            <li class="popular-item new">
                                 <p class="product-name">Перфоратор BOSCH<br>
                                     BFG 2000</p>
                                 <p class="old-price"></p>
