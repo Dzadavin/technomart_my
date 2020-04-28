@@ -399,13 +399,32 @@
         </footer>
 
         <section class="popup-map">
-            <!--form map-->
-            <button class="popup-map-close">close</button>
+            <img src="img/map_big.jpg" alt="Большая Конюшенная ул., 19">
+            <button class="popup-close">close</button>
         </section>
 
         <section class="popup-write-us">
-            <!--form-->
-            <button class="popup-write-us-close">close</button>
+            <form class="write-form" method="GET" action="http://echo.htmlacademy.ru">
+                <div class="white-back">
+                    <p class="name-input">
+                        <label for="your-name">Ваше имя:</label>
+                        <input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="email-input">
+                        <label for="your-email">Ваш e-mail:</label>
+                        <input type="text" name="email" id="your-email" placeholder="email@example.com">
+                    </p>
+                    <p class="letter">
+                        <label for="your-letter">Текст письма:</label>
+                        <textarea rows="5" cols="10" name="letter" id="your-letter" 
+                        placeholder="В свободной форме"></textarea>
+                    </p>
+                </div>
+                <div class="grey-back">
+                    <button type="submit" class="red-button">Отправить</button>
+                </div>
+            </form>
+            <button class="popup-close">close</button>
         </section>
     </body>
 </html>
